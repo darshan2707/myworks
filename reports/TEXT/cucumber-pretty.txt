@@ -1,0 +1,14 @@
+@f1
+Feature: Test login feature
+
+  @f1 @first
+  Scenario: verify application url [90m# src/test/resources/features/LoginPage.feature:23[0m
+    [31mGiven [0m[31mApplication Url[0m          [90m# Login.application_Url()[0m
+      [31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.testingone.stepdef.Login.application_Url(Login.java:43)
+	at ✽.Application Url(src/test/resources/features/LoginPage.feature:24)
+[0m
+    [36mThen [0m[36mI Click on Gmail Link[0m     [90m# Login.i_Click_on_Gmail_Link1()[0m

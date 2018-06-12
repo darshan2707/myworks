@@ -1,0 +1,86 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 21889675351,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "verify application url",
+        "description": "",
+        "id": "test-login-feature;verify-application-url",
+        "after": [
+          {
+            "result": {
+              "duration": 921335252,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.testingone.stepdef.Login.application_Url(Login.java:43)\r\n\tat ✽.Application Url(src/test/resources/features/LoginPage.feature:24)\r\n",
+              "duration": 8605815324,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "Application Url",
+            "match": {
+              "location": "Login.application_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I Click on Gmail Link",
+            "match": {
+              "location": "Login.i_Click_on_Gmail_Link1()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@f1"
+          },
+          {
+            "name": "@first"
+          }
+        ]
+      }
+    ],
+    "name": "Test login feature",
+    "description": "",
+    "id": "test-login-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/LoginPage.feature",
+    "tags": [
+      {
+        "name": "@f1",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

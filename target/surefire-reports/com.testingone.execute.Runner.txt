@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.testingone.execute.Runner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.325 s <<< FAILURE! - in com.testingone.execute.Runner
+verify application url(Test login feature)  Time elapsed: 31.521 s  <<< FAILURE!
+java.lang.AssertionError
+

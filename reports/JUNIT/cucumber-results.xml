@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.491477">
+<testcase classname="Test login feature" name="verify application url" time="31.491477">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.testingone.stepdef.Login.application_Url(Login.java:43)&#13;&#10;&#9;at ✽.Application Url(src/test/resources/features/LoginPage.feature:24)&#13;&#10;"><![CDATA[Given Application Url.......................................................failed
+Then I Click on Gmail Link..................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.testingone.stepdef.Login.application_Url(Login.java:43)
+	at ✽.Application Url(src/test/resources/features/LoginPage.feature:24)
+]]></failure>
+</testcase>
+</testsuite>

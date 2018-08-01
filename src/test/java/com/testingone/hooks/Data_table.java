@@ -40,7 +40,7 @@ public class Data_table {
 	  System.out.println( values.get(1).size());
 	  
 	  
-	  
+	  System.out.println(data.getPickleRows());
 	}
 	
 	@Then("^test map values$")
@@ -50,8 +50,9 @@ public class Data_table {
 	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
 	    // E,K,V must be a scalar (String, Integer, Date, enum etc).
 	    // Field names for YourType must match the column names in 
-	    // your feature file (except for spaces and capitalization).
+	    // your feature file (except for spaces and capitalization).1
 		//  address.asMap(keyType, valueType)
+		
 	    	
 	for(Map<String,String> add	:address.asMaps(String.class, String.class)) {
 		System.out.println(add.get("City"));
@@ -103,7 +104,7 @@ public class Data_table {
 	 public void takeScreenShot() {
 		 File srcFile = ((TakesScreenshot)Hooks.driver).getScreenshotAs(OutputType.FILE);
 		 try {
-			FileUtils.copyFile(srcFile,new File("D:/screenshot/er1.png"));
+			FileUtils.copyFile(srcFile,new File("D:/screenshot/er1.jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "source": "^I Click on Gmail Link$",
+    "steps": [
+      {
+        "name": "I Click on Gmail Link",
+        "aggregatedDurations": {
+          "average": 0.000559353,
+          "median": 0.000559353
+        },
+        "durations": [
+          {
+            "duration": 0.000559353,
+            "location": "src/test/resources/features/LoginPage.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Application Url$",
+    "steps": [
+      {
+        "name": "Application Url",
+        "aggregatedDurations": {
+          "average": 13.174796093,
+          "median": 13.174796093
+        },
+        "durations": [
+          {
+            "duration": 13.174796093,
+            "location": "src/test/resources/features/LoginPage.feature:24"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,6 @@
 Feature: Test Data table
 
+
 Scenario: Fetch the value
 Given Get the values   
 |fruits|cost| 

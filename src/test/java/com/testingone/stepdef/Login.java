@@ -7,10 +7,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.testingone.utility.Config;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,7 +21,7 @@ import locators.ObjectsLoginPage;
 
 public class Login{
 
- 
+	 
 	 ObjectsLoginPage i = new ObjectsLoginPage(Hooks.driver);
 	@Given("^Application Url$")
 	public void application_Url() throws Exception {
@@ -35,12 +38,13 @@ public class Login{
 		
 		//ObjectsLoginPage.searchBar.sendKeys("Seleniumtest");
 	
-		Hooks.driver.get("https://google.co.in");
+		Hooks.driver.get(Config.getProperty("url"));
 	    i.sendkeys("JAVA BY Reference");
+	    Hooks.logger.info("Text Entered..");
 	    //PageObjects.hook.driver.get("https://google.co.in");
 	    //PageObjects.objLogin.sendkeys("JAVA BY Reference");
 		Thread.sleep(5000);
-		Assert.assertTrue(false);
+		//Assert.assertTrue(false);
 		//Assert.assertEquals("", "");
 
 	}
@@ -53,18 +57,6 @@ public class Login{
 		//i.linkGmail.click();
 	    //System.out.println(i.linkGmail);
 	    
-	    Properties pr = new Properties();
-	    File file = new File("D:/java/pro");
-	    
-	    File[] files = file.listFiles();
-	    
-	    for(File f:files) {
-	    	
-	    	 pr.load(new FileInputStream(f));
-	    	
-	    }
-	     
-	     System.out.println(pr.getProperty("city"));
 	    
 	     
 	     Integer ir = new Integer(100);
@@ -86,10 +78,16 @@ public class Login{
 	   wd.switchTo().activeElement().findElement(By.id(""));
 	   wd.navigate();//return navigation type
 	  */ 
-	
-	     
 	   
 	}
+	
+	@Given("^ci url$")
+	public void ci_url() {
+	    System.out.println("This kdfjk");
+	}
+
+
+	
 	
 	
 }

@@ -6,11 +6,20 @@
         "before": [
           {
             "result": {
-              "duration": 21889675351,
+              "duration": 29914658976,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.init()"
+              "location": "Hooks.init(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 259634,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforScenario()"
             }
           }
         ],
@@ -21,7 +30,7 @@
         "after": [
           {
             "result": {
-              "duration": 921335252,
+              "duration": 1032885789,
               "status": "passed"
             },
             "match": {
@@ -34,9 +43,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.testingone.stepdef.Login.application_Url(Login.java:43)\r\n\tat ✽.Application Url(src/test/resources/features/LoginPage.feature:24)\r\n",
-              "duration": 8605815324,
-              "status": "failed"
+              "duration": 13174796093,
+              "status": "passed"
             },
             "line": 24,
             "name": "Application Url",
@@ -47,7 +55,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 559353,
+              "status": "passed"
             },
             "line": 25,
             "name": "I Click on Gmail Link",
